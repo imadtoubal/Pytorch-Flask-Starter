@@ -2,6 +2,8 @@
 
 This project is aimed to help machine learning developers to quickly build a Flask web app in a Docker container ready to be deployed. 
 
+By default, this app uses MobileNetV2 image classifier that was pre-trained on the ImageNet dataset. This can be easily changed with any custom deep learning model.
+
 ## Getting Started (using Python virtualenv)
 
 You need to have Python installed in your computer.
