@@ -1,6 +1,8 @@
 # Flask/Pytorch/Docker starter app
 
-This project is aimed to help machine learning developers to quickly build a Flask web app in a Docker container ready to be deployed. 
+This project is aimed to help machine learning developers to quickly build a Flask web app in a Docker container ready to be deployed.
+
+This website is deployed in Heroku: https://flaskpytorch.herokuapp.com/
 
 By default, this app uses MobileNetV2 image classifier that was pre-trained on the ImageNet dataset. This can be easily changed with any custom deep learning model.
 
