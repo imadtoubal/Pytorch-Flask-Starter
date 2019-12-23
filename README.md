@@ -39,11 +39,11 @@ You need to have Python installed in your computer.
 
 * Run the app:
     ```console
-    Flask run
+    flask run
     ```
 * Run on a specific port:
     ```console
-    python character_level_text_generation.py
+    flask run -p <port>
     ```
 
 ## Getting Started (using Docker)
