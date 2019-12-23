@@ -1,6 +1,6 @@
 # Flask/Pytorch/Docker starter app
 
-This project is aimed to help machine learning developers to quickly build a Flask web app in a Docker container ready to be deployed.
+This project is aimed to help machine learning developers to quickly build and deploy a Flask web app that take advantage of their machine learning  ready PyTorch model. The documentation explains how toget up and running with either virtualenv or Docker.
 
 This website is deployed in Heroku: https://flaskpytorch.herokuapp.com/
 
