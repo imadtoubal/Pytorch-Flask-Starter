@@ -2,6 +2,8 @@
 
 This project is aimed to help machine learning developers to quickly build and deploy a Flask web app that take advantage of their machine learning  ready PyTorch model. The documentation explains how to get up and running with either virtualenv or Docker.
 
+![Website mockup](assets/screenshot.png)
+
 This website is deployed in Heroku: https://flaskpytorch.herokuapp.com/
 
 By default, this app uses MobileNetV2 image classifier that was pre-trained on the ImageNet dataset. This can be easily changed with any custom deep learning model.
