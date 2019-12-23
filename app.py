@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from models import MobileNet
+import os 
 
 app = Flask(__name__)
 
@@ -18,4 +19,5 @@ def success():
         saveLocation = f.filename
         f.save(saveLocation)
         inference = model.infer(saveLocation)
+        os.remove(saveLocation)
         return render_template('inference.html', name = inference)  
