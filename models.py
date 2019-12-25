@@ -9,7 +9,7 @@ class MobileNet:
         with open('imagenet_classes.txt') as f:
             self.classes = [line.strip() for line in f.readlines()]
 
-        self.model = torch.hub.load('pytorch/vision:v0.4.2', 'mobilenet_v2', pretrained=True)
+        self.model = torch.hub.load('pytorch/vision:v0.4.2', 'mobilenet_v2', pretrained=True, force_reload=True)
         self.model.eval()
     
     def infer(self, image_path):
