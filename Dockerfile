@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM python:3.6.10-slim
 
 MAINTAINER Imad Toubal
 
