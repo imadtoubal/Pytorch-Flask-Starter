@@ -63,6 +63,11 @@ You need to have Python installed in your computer.
     This will run the app on port `5000`. You can replace that with which ever port that is more suitable.
 
 
+## Changing the model
+
+1. Go to `models.py`
+2. Follow the structure of the class `MobileNet`to create a custom model class
+3. Use your class in `app.py`
 
 ## Built With
 
