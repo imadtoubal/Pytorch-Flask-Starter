@@ -9,8 +9,12 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 model = MobileNet()
 
 @app.route('/')
-def hello_world():
+def index():
     return render_template('index.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 @app.route('/infer', methods = ['POST'])  
 def success():  
