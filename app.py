@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from models import MobileNet
 import os 
+from math import floor
 
 app = Flask(__name__)
 
@@ -22,6 +23,10 @@ def success():
         f = request.files['file']
         saveLocation = f.filename
         f.save(saveLocation)
-        inference = model.infer(saveLocation)
+        inference, confidence = model.infer(saveLocation)
+        # make a percentage with 2 decimal points
+        confidence = floor(confidence * 10000) / 100
+        # delete file after making an inference
         os.remove(saveLocation)
-        return render_template('inference.html', name = inference)  
+        # respond with the inference 
+        return render_template('inference.html', name = inference, confidence = confidence)  

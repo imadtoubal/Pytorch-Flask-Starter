@@ -35,13 +35,9 @@ class MobileNet:
 
         # The output has unnormalized scores. To get probabilities, you can run a softmax on it.
         output = torch.nn.functional.softmax(output[0], dim=0)
-        _, index = torch.max(output, 0)
+        confidence, index = torch.max(output, 0)
 
-        return self.classes[index.item()]
-
-
-
-
+        return (self.classes[index.item()], confidence.item())
 
 
 
