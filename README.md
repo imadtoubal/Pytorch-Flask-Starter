@@ -81,7 +81,7 @@ You need to have Python installed in your computer.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 
  Happy coding!
