@@ -1,4 +1,4 @@
-FROM python:3.6.10-slim
+FROM python:3
 
 MAINTAINER Imad Toubal
 
@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD ["flask", "run", "--host=0.0.0.0", "--port=80"]
+CMD ["python", "app.py"]
