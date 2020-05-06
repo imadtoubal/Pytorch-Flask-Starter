@@ -62,6 +62,22 @@ You need to have Python installed in your computer.
     ```
     This will run the app on port `5000`. You can replace that with which ever port that is more suitable.
 
+## Deploying to Heroku
+
+- Create Heroku app
+    ```
+    heroku create 
+    git push heroku master
+    ```
+    
+OR
+
+- Add to existing Heroku app
+    ```
+    heroku git:remote -a <your-app-name>
+    ```
+
+
 
 ## Changing the model
 
