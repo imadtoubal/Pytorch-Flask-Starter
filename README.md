@@ -75,6 +75,7 @@ OR
 - Add to existing Heroku app
     ```
     heroku git:remote -a <your-app-name>
+    git push heroku master
     ```
 
 
